@@ -22,5 +22,16 @@ module.exports = {
       }
     }
   },
-  'gatsby-plugin-offline'],
+  'gatsby-plugin-offline',
+  {
+    resolve: 'gatsby-plugin-google-analytics',
+    options: {
+      trackingId: 'UA-113634291-2',
+      // Puts tracking script in the head instead of the body
+      head: false,
+      // Avoids sending pageview hits from custom paths
+      exclude: ['/preview/**", "/do-not-track/me/too/'],
+    },
+  },
+],
 }
