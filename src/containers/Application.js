@@ -12,7 +12,10 @@ class Application extends Component {
   constructor (props) {
     super(props)
     const navOptions = ['About', 'Wedding', 'Gallery', 'Travel & Activities'];
-    const url = window.location.href;
+    let url = '';
+    if (typeof window !== 'undefined') {
+      url = window.location.href;
+    }
     let pathname = 'About';
     if (url.indexOf('#') !== -1) {
       const urlString = url.split('#');
