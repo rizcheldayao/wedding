@@ -1,0 +1,142 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.wedding {
+  text-align: center;
+  color: $black;
+  padding-top: 1rem;
+  background-color: $white;
+  font-family: $playfair-display;
+
+  h1, h3 {
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-family: $great-vibes;
+    margin: 0;
+  }
+
+  &-cards {
+    background-color: $rose-gold;
+    display: flex;
+  }
+}
+
+.details {
+  img {
+    width: 100%;
+  }
+
+  &-section {
+    display: flex;
+    justify-content:center;
+    margin-top: 1rem;
+  }
+
+  &-reception, &-ceremony {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    padding: 4rem;
+    @include background;
+
+    svg {
+      display: block;
+      margin: auto;
+      background-color: $rose-gold;
+      border-radius: 50%;
+      overflow: visible;
+      padding: 15px;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      font-family: $playfair-display;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}
+
+.timeline {
+  display: flex;
+  width: 100%;
+  padding: 5rem 0;
+}
+
+.registry {
+  @include background;
+  padding: 1rem 0;
+  width: 100%;
+
+  &-stores {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    justify-content: center;
+  }
+
+  &-square {
+    min-width: 200px;
+    min-height: 200px;
+    background-color: $white;
+    margin: 3rem;
+
+    &:hover {
+      box-shadow: 10px 5px 5px $grey;
+    }
+  }
+
+  &-amazon {
+    padding: 5rem 3.5rem;
+  }
+
+  &-target {
+    padding: 3rem 4rem;
+  }
+}
+
+.instagram {
+  border-right: 1px solid $white;
+}
+
+.instagram, .rsvp {
+  width: 50%;
+  padding:2rem;
+
+  h3 {
+    text-transform: none;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 1280px) {
+  .details {
+    &-section {
+      flex-direction: column;
+    }
+    &-reception, &-ceremony {
+      width: 100%;
+      padding: 2rem 0;
+    }
+  }
+}
+
+@media (max-width: 823px) {
+  .timeline {
+    padding: 0;
+  }
+}

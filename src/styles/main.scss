@@ -1,0 +1,31 @@
+@import './header';
+@import './nav';
+@import './about';
+@import './wedding';
+@import './gallery';
+@import './travel';
+@import './footer';
+
+* {
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
+}
+
+main {
+  display: flex;
+  height: 100%;
+}
+
+html,
+body {
+  max-height: 100%;
+  margin:0;
+  padding:0;
+  max-width: 100%;
+}
+
+.layout {
+  width: 100%
+}

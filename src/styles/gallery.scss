@@ -1,0 +1,26 @@
+@import 'variables.scss';
+
+.gallery {
+  padding: 1rem 5rem 1rem 5rem;
+  text-align: center;
+  color: $black;
+  font-family: $playfair-display;
+
+  h1 {
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 400;
+    font-size: 28px;
+  }
+
+  h4 {
+    font-family: $great-vibes;
+    margin: 0;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid $rose-gold;
+  }
+
+  .ReactGridGallery {
+    padding: 2rem 0;
+  }
+}

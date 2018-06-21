@@ -1,0 +1,31 @@
+@import './variables';
+
+.footer {
+  position: relative;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.8;
+  }
+
+  h1 {
+    width: 100%;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: $black;
+    font-family: $great-vibes;
+  }
+}
+
+@media (max-width: 823px) {
+  .footer {
+    h1 {
+      font-size: 18px;
+      bottom: 2px;
+    }
+  }
+}

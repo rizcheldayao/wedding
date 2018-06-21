@@ -1,0 +1,219 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.bio {
+  &-svg {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 2rem;
+  }
+}
+
+.about {
+  display: flex;
+  margin: 1rem 2rem 2rem 2rem;
+  font-family: $playfair-display;
+  color: $black;
+
+  @media (max-width:1281px)  {
+    flex-wrap: wrap;
+  }
+
+  &-groom, &-bride {
+    padding: 1rem 1rem 1rem 0;
+    display: flex;
+    border-top: 2px solid $rose-gold;
+    border-bottom: 2px solid $rose-gold;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 36px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+
+  &-groom {
+    justify-content: flex-start;
+  }
+
+  &-bride {
+    justify-content: flex-end;
+  }
+
+  &-yes {
+    color: $rose-gold;
+
+    svg {
+      padding-left: 10px;
+    }
+  }
+
+  &-details {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-start {
+    background-color: $rose-gold;
+    padding: 2rem;
+    text-align: center;
+
+    h1 {
+      font-size: 48px;
+      font-family: $great-vibes;
+    }
+  }
+
+  &-party {
+    @include background;
+    padding: 2rem 2rem 2rem 2rem;
+
+    h3 {
+      text-align: center;
+      font-family: $playfair-display;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+  }
+
+  &-images, &-images-2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &-circle {
+    overflow: hidden;
+    max-height: 150px;
+    padding-left: 15px;
+
+    img {
+      border-radius: 50%;
+      min-height: 150px;
+    }
+  }
+
+  &-role {
+    h4, p {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    h4 {
+      color: $rose-gold;
+      font-family: $great-vibes;
+      font-size: 28px;
+      padding-top: 1rem;
+    }
+
+    p {
+      font-family: $playfair-display;
+      color: $black;
+    }
+
+  }
+
+  .placeholder {
+    background-color: #d3d3d3;
+    width: 250px;
+    height: 300px;
+  }
+
+  &-story {
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem 2rem 2rem;
+    background-color: $white;
+    border-bottom: 2px solid $rose-gold;
+    margin: 2rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-svg {
+    display: block;
+    margin: auto;
+    padding-top: 1rem;
+    @include background;
+  }
+
+  &-us {
+    background-color: $white;
+    padding: 2rem;
+    text-align: center;
+    font-family: $playfair-display;
+
+    h1, h4 {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+    }
+
+    h4 {
+      color: $rose-gold;
+    }
+
+    h1 {
+      font-size: 28px;
+      text-transform: uppercase;
+    }
+
+    P {
+      border-bottom: 2px solid $rose-gold;
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .about {
+    &-groom, &-bride {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .about {
+    &-story {
+      padding: 0 0 2rem 0;
+    }
+  }
+}
+
+@media (max-width: 823px) {
+  .about {
+    &-us {
+      padding-bottom: 0;
+    }
+    &-story {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    &-party {
+      margin-top: 2rem;
+    }
+    &-person {
+      padding-top: 1rem;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+@import './variables';
+
+.header {
+  background-color: lightgrey;
+  width: 100%;
+  text-align: center;
+
+
+  h1 {
+    margin: 0;
+    color: $white;
+    font-family: $playfair-display;
+    font-weight: 400;
+  }
+
+  img {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: $white;
+    opacity: 0.5;
+    height: auto;
+    display: block;
+  }
+
+  &-details {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.countdown {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.circle {
+  border-radius: 50%;
+  border: 2px solid $white;
+  margin: 1rem;
+  color: $white;
+  text-align: center;
+  height: 175px;
+  width: 175px;
+  font-family: $playfair-display;
+
+  p {
+    padding: 15px 25px;
+    font-size: 24px;
+  }
+
+  span {
+    font-size: 42px;
+    font-weight: 800;
+  }
+}
+
+@media (min-width: 882px) and (max-width:1121px)  {
+  .header {
+    &-details {
+      top: 30%;
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .countdown {
+    display: none;
+  }
+
+}
+
+@media (min-width: 515px) and (max-width: 1180px) {
+  .header {
+    &-details {
+      top: 20%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    &-details {
+      top: 10%;
+    }
+    h1 {
+      font-size: 18px;
+    }
+  }
+}
