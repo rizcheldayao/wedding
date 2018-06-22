@@ -44,7 +44,7 @@ class Application extends Component {
   }
 
   componentDidMount() {
-    setTimeout(function() { this.setState({loading: false}); }.bind(this), 1000);
+    setTimeout(function() { this.setState({loading: false}); }.bind(this), 500);
   }
 
   // addImages () {
