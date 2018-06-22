@@ -25,6 +25,7 @@ class Application extends Component {
     this.state = {
       selectedNav: pathname,
       navOptions: navOptions,
+      loading: true,
       // imagesLoaded: 0,
       // totalImages: 1,
     }
@@ -42,6 +43,10 @@ class Application extends Component {
     if (element) element.scrollIntoView({behavior: 'smooth'});
   }
 
+  componentDidMount() {
+    setTimeout(function() { this.setState({loading: false}); }.bind(this), 2000);
+  }
+
   // addImages () {
   //   const { imagesLoaded } = this.state;
   //   this.setState({
@@ -51,13 +56,13 @@ class Application extends Component {
   // }
 
   render () {
-    const { navOptions, selectedNav, imagesLoaded, totalImages } = this.state;
+    const { navOptions, selectedNav, loading, imagesLoaded, totalImages } = this.state;
     return (
       <div className='layout'>
-        {/* <div style={imagesLoaded >= totalImages ? { display: 'none' } : { display: 'block' }}>
+        <div style={!loading ? { display: 'none' } : { display: 'block' }}>
           <Loading />
-        </div> */}
-        {/* <div style={imagesLoaded >= totalImages ? { display: 'block' } : { display: 'none' }}> */}
+        </div>
+        <div style={!loading ? { display: 'block' } : { display: 'none' }}>
           <Header />
           <Navigation setNav={this.setNav} navOptions={navOptions} />
           {selectedNav === 'About' && <About />}
@@ -65,7 +70,7 @@ class Application extends Component {
           {selectedNav === 'Gallery' && <Gallery />}
           {selectedNav === 'Travel' && <Travel />}
           {(selectedNav !== 'Gallery' && selectedNav !== 'Travel') && <Footer />}
-        {/* </div> */}
+        </div>
       </div>
     );
   }
