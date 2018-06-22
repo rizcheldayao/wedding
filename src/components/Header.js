@@ -5,19 +5,19 @@ import Data from '../data/data.json';
 import EngagementPic from '../images/header.jpg';
 
 class Header extends Component {
-  constructor (props) {
-    super(props);
-    this.addImages = this.addImages.bind(this);
-  }
+  // constructor (props) {
+  //   super(props);
+  //   this.addImages = this.addImages.bind(this);
+  // }
 
-  addImages () {
-    this.props.addImages();
-  }
+  // addImages () {
+  //   this.props.addImages();
+  // }
 
   render () {
     return (
       <div className='header'>
-        <img alt='Header image' src={EngagementPic} onLoad={this.addImages}/>
+        <img alt='Header image' src={EngagementPic} />
         <div className='header-details'>
           <h1>{Data.headerTitle}</h1>
           <Countdown />
@@ -28,8 +28,8 @@ class Header extends Component {
   }
 }
 
-Header.propTypes = {
-  addImages: PropTypes.func,
-};
+// Header.propTypes = {
+//   addImages: PropTypes.func,
+// };
 
 export default Header;

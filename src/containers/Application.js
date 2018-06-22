@@ -25,11 +25,11 @@ class Application extends Component {
     this.state = {
       selectedNav: pathname,
       navOptions: navOptions,
-      imagesLoaded: 0,
-      totalImages: 1,
+      // imagesLoaded: 0,
+      // totalImages: 1,
     }
     this.setNav = this.setNav.bind(this);
-    this.addImages = this.addImages.bind(this);
+    // this.addImages = this.addImages.bind(this);
   }
 
   setNav (e) {
@@ -42,30 +42,30 @@ class Application extends Component {
     if (element) element.scrollIntoView({behavior: 'smooth'});
   }
 
-  addImages () {
-    const { imagesLoaded } = this.state;
-    this.setState({
-      imagesLoaded: imagesLoaded + 1,
-    });
-    console.log('done');
-  }
+  // addImages () {
+  //   const { imagesLoaded } = this.state;
+  //   this.setState({
+  //     imagesLoaded: imagesLoaded + 1,
+  //   });
+  //   console.log('done');
+  // }
 
   render () {
     const { navOptions, selectedNav, imagesLoaded, totalImages } = this.state;
     return (
       <div className='layout'>
-        <div style={imagesLoaded >= totalImages ? { display: 'none' } : { display: 'block' }}>
+        {/* <div style={imagesLoaded >= totalImages ? { display: 'none' } : { display: 'block' }}>
           <Loading />
-        </div>
-        <div style={imagesLoaded >= totalImages ? { display: 'block' } : { display: 'none' }}>
-          <Header addImages={this.addImages} />
+        </div> */}
+        {/* <div style={imagesLoaded >= totalImages ? { display: 'block' } : { display: 'none' }}> */}
+          <Header />
           <Navigation setNav={this.setNav} navOptions={navOptions} />
           {selectedNav === 'About' && <About />}
           {selectedNav === 'Wedding' && <Wedding />}
           {selectedNav === 'Gallery' && <Gallery />}
           {selectedNav === 'Travel' && <Travel />}
           {(selectedNav !== 'Gallery' && selectedNav !== 'Travel') && <Footer />}
-        </div>
+        {/* </div> */}
       </div>
     );
   }
