@@ -8,15 +8,6 @@ class Header extends Component {
   constructor (props) {
     super(props);
     this.addImages = this.addImages.bind(this);
-    this.state = {
-      image: null,
-    }
-  }
-
-  componentWillMount () {
-    const img = new Image();
-    img.src = EngagementPic;
-    this.setState({ image: img });
   }
 
   addImages () {
@@ -26,7 +17,7 @@ class Header extends Component {
   render () {
     return (
       <div className='header'>
-        <img alt='Header image' src={this.state.image.src} onLoad={this.addImages}/>
+        <img alt='Header image' src={EngagementPic} onLoad={this.addImages}/>
         <div className='header-details'>
           <h1>{Data.headerTitle}</h1>
           <Countdown />

@@ -46,7 +46,8 @@ class Application extends Component {
     const { imagesLoaded } = this.state;
     this.setState({
       imagesLoaded: imagesLoaded + 1,
-    })
+    });
+    console.log('done');
   }
 
   render () {
@@ -65,7 +66,6 @@ class Application extends Component {
           {selectedNav === 'Travel' && <Travel />}
           {(selectedNav !== 'Gallery' && selectedNav !== 'Travel') && <Footer />}
         </div>
-
       </div>
     );
   }

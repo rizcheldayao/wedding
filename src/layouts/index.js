@@ -6,7 +6,7 @@ import Application from '../containers/Application';
 const Layout = ({ data }) => (
   <div>
     <Helmet
-      title={data.site.siteMetadata.title}
+      title={'Wood Wedding'}
       meta={[
         { name: 'description', content: 'Wood wedding website' },
         { name: 'keywords', content: 'wood, wedding, oliver wood, rizchel dayao' },
