@@ -5,15 +5,6 @@ import Data from '../data/data.json';
 import EngagementPic from '../images/header.jpg';
 
 class Header extends Component {
-  // constructor (props) {
-  //   super(props);
-  //   this.addImages = this.addImages.bind(this);
-  // }
-
-  // addImages () {
-  //   this.props.addImages();
-  // }
-
   render () {
     return (
       <div className='header'>
@@ -27,9 +18,5 @@ class Header extends Component {
     );
   }
 }
-
-// Header.propTypes = {
-//   addImages: PropTypes.func,
-// };
 
 export default Header;

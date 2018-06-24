@@ -26,11 +26,8 @@ class Application extends Component {
       selectedNav: pathname,
       navOptions: navOptions,
       loading: true,
-      // imagesLoaded: 0,
-      // totalImages: 1,
     }
     this.setNav = this.setNav.bind(this);
-    // this.addImages = this.addImages.bind(this);
   }
 
   setNav (e) {
@@ -46,14 +43,6 @@ class Application extends Component {
   componentDidMount() {
     setTimeout(function() { this.setState({loading: false}); }.bind(this), 500);
   }
-
-  // addImages () {
-  //   const { imagesLoaded } = this.state;
-  //   this.setState({
-  //     imagesLoaded: imagesLoaded + 1,
-  //   });
-  //   console.log('done');
-  // }
 
   render () {
     const { navOptions, selectedNav, loading, imagesLoaded, totalImages } = this.state;

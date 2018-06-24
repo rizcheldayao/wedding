@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Data from '../data/data.json';
 
 class Loading extends Component {
   render () {
@@ -52,7 +53,7 @@ class Loading extends Component {
           </svg>
         </div>
         <div className='loading-text'>
-          <h1>Loading...</h1>
+          <h1>{Data.welcome}</h1>
         </div>
       </div>
     );

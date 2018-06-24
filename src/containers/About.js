@@ -59,7 +59,7 @@ class About extends Component {
         <section className='about-us'>
           <h1>{Data.ourStory}</h1>
           <h4>{Data.futureWood}</h4>
-          <p>{Data.storyDetails}</p>
+          <p>{Data.storyDetails.join("\n\n")}</p>
         </section>
         <section className='about-story'>
           <img src={AboutTimeline} alt='Timeline Image' onLoad={this.addImages} />
