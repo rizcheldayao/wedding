@@ -45,7 +45,7 @@ class Application extends Component {
   }
 
   render () {
-    const { navOptions, selectedNav, loading, imagesLoaded, totalImages } = this.state;
+    const { navOptions, selectedNav, loading } = this.state;
     return (
       <div className='layout'>
         <div style={!loading ? { display: 'none' } : { display: 'block' }}>
