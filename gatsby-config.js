@@ -33,5 +33,16 @@ module.exports = {
       exclude: ['/preview/**", "/do-not-track/me/too/'],
     },
   },
-],
-}
+  {
+    resolve: 'gatsby-plugin-manifest',
+    options: {
+      name: 'WoodWedding',
+      short_name: 'WoodWedding',
+      start_url: '/',
+      background_color: '#fff',
+      theme_color: '#f7d0cb',
+      display: 'minimal-ui',
+      icon: 'src/favicon.png',
+    },
+  }
+]}
