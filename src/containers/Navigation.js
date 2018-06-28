@@ -1,22 +1,18 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 
 class Navigation extends Component {
   constructor (props) {
     super(props);
-    this.setNav = this.setNav.bind(this);
     const { navOptions } = this.props;
     const list = navOptions.map((option) => {
-      const anchor = option.split(' ');
-      return <li key={option} onClick={this.setNav}><a href={`#${anchor[0]}`}>{option}</a></li>
+      const str = option.split(' ');
+      return <li key={option}><NavLink exact={true} to={`/${str[0]}`}>{str[0]}</NavLink></li>
     });
     this.state = {
       list: list,
     }
-  }
-
-  setNav (option) {
-    this.props.setNav(option);
   }
 
   render () {
@@ -34,7 +30,6 @@ class Navigation extends Component {
 }
 
 Navigation.propTypes = {
-  setNav: PropTypes.func,
   navOptions: PropTypes.array,
 };
 

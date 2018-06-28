@@ -1,43 +1,23 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from '../components/Header';
 import Navigation from './Navigation';
 import About from './About';
 import Wedding from '../components/Wedding';
 import Gallery from '../components/Gallery';
 import Travel from '../components/Travel';
-import Footer from '../components/Footer';
 import Loading from '../components/Loading';
+import Footer from '../components/Footer';
 import '../styles/main.scss';
 
 class Application extends Component {
   constructor (props) {
     super(props)
     const navOptions = ['About', 'Wedding', 'Gallery', 'Travel & Activities'];
-    let url = '';
-    if (typeof window !== 'undefined') {
-      url = window.location.href;
-    }
-    let pathname = 'About';
-    if (url.indexOf('#') !== -1) {
-      const urlString = url.split('#');
-      pathname = urlString[urlString.length - 1];
-    }
     this.state = {
-      selectedNav: pathname,
       navOptions: navOptions,
       loading: true,
     }
-    this.setNav = this.setNav.bind(this);
-  }
-
-  setNav (e) {
-    const selectedOption = e.target.innerHTML;
-    const firstWord = selectedOption.split(' ');
-    this.setState({
-      selectedNav: firstWord[0],
-    });
-    const element = document.getElementById(firstWord);
-    if (element) element.scrollIntoView({behavior: 'smooth'});
   }
 
   componentDidMount() {
@@ -45,7 +25,7 @@ class Application extends Component {
   }
 
   render () {
-    const { navOptions, selectedNav, loading } = this.state;
+    const { navOptions, loading } = this.state;
     return (
       <div className='layout'>
         <div style={!loading ? { display: 'none' } : { display: 'block' }}>
@@ -53,12 +33,16 @@ class Application extends Component {
         </div>
         <div style={!loading ? { display: 'block' } : { display: 'none' }}>
           <Header />
-          <Navigation setNav={this.setNav} navOptions={navOptions} />
-          {selectedNav === 'About' && <About />}
-          {selectedNav === 'Wedding' && <Wedding />}
-          {selectedNav === 'Gallery' && <Gallery />}
-          {selectedNav === 'Travel' && <Travel />}
-          {(selectedNav !== 'Gallery' && selectedNav !== 'Travel') && <Footer />}
+          <Router>
+            <div>
+              <Navigation navOptions={navOptions}/>
+              <Route exact={true} path="/" component={() =>(<div><About/><Footer/></div>)} />
+              <Route path="/About" component={() =>(<div><About/><Footer/></div>)} />
+              <Route path="/Wedding" component={() =>(<div><Wedding/><Footer/></div>)} />
+              <Route path="/Gallery" component={Gallery} />
+              <Route path="/Travel" component={Travel} />
+            </div>
+          </Router>
         </div>
       </div>
     );

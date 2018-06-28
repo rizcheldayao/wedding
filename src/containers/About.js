@@ -5,6 +5,7 @@ import RitzImage from '../images/ritz.jpg';
 import OliverImage from '../images/oliver.jpg';
 import AboutTimeline from '../images/timeline.svg';
 import Person from '../components/Person';
+import Footer from '../components/Footer';
 
 class About extends Component {
    render () {
