@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { NavLink } from 'react-router-dom';
+import Link from "gatsby-link";
 
 class Navigation extends Component {
   constructor (props) {
@@ -8,7 +8,7 @@ class Navigation extends Component {
     const { navOptions } = this.props;
     const list = navOptions.map((option) => {
       const str = option.split(' ');
-      return <li key={option}><NavLink exact={true} to={`/${str[0]}`}>{str[0]}</NavLink></li>
+      return <li key={option}><Link to={`/${str[0]}`}>{str[0]}</Link></li>
     });
     this.state = {
       list: list,

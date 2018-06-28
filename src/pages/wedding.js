@@ -1,10 +1,10 @@
 import React from 'react'
-import About from '../containers/About';
+import Wedding from '../components/Wedding';
 import Footer from '../components/Footer';
 
 const IndexPage = () => (
   <div>
-    <About />
+    <Wedding />
     <Footer />
   </div>
 )
