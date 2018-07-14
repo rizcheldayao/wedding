@@ -87,25 +87,22 @@
     flex-wrap: wrap;
     margin: 1rem;
     justify-content: center;
-  }
 
-  &-square {
-    min-width: 200px;
-    min-height: 200px;
-    background-color: $white;
-    margin: 3rem;
+    a {
+      min-width: 200px;
+      background-color: $white;
+      margin: 1rem;
+      color: black;
+      padding: 75px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 24px;
 
-    &:hover {
-      box-shadow: 10px 5px 5px $grey;
+      &:hover {
+        box-shadow: 10px 5px 5px $grey;
+      }
     }
-  }
-
-  &-amazon {
-    padding: 5rem 3.5rem;
-  }
-
-  &-target {
-    padding: 3rem 4rem;
   }
 }
 
