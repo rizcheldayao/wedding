@@ -1,0 +1,12 @@
+
+<svg width="44px" height="30px" viewBox="0 0 44 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hotel" transform="translate(-2.000000, -10.000000)">
+            <polygon id="Shape" points="0 0 48 0 48 48 0 48"></polygon>
+            <path d="M14,26 C17.32,26 20,23.32 20,20 C20,16.68 17.32,14 14,14 C10.68,14 8,16.68 8,20 C8,23.32 10.68,26 14,26 Z M38,14 L22,14 L22,28 L6,28 L6,10 L2,10 L2,40 L6,40 L6,34 L42,34 L42,40 L46,40 L46,22 C46,17.58 42.42,14 38,14 Z" id="Shape" fill="#F7D0CB" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

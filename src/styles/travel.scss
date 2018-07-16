@@ -1,7 +1,68 @@
 @import 'variables.scss';
 
 .travel {
-  color: $rose-gold;
-  font-family: $great-vibes;
+  padding: 1rem 2rem;
   text-align: center;
+  color: $black;
+  font-family: $playfair-display;
+
+  h2 {
+    color: $rose-gold;
+    font-family: $great-vibes;
+    font-size: 48px;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 400;
+    font-size: 28px;
+  }
+
+  h4 {
+    font-family: $great-vibes;
+    margin: 0;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid $rose-gold;
+  }
+
+  &-accommodations {
+    background: $white;
+    display: flex;
+    margin: 1rem;
+    padding-top: 1rem;
+
+    @media (max-width:800px)  {
+      flex-direction: column;
+    }
+  }
+
+  &-column {
+    max-width: 33.333%;
+    border-right: 5px dotted $rose-gold;
+
+    @media (max-width:800px)  {
+      max-width: 100%;
+      border-bottom: 5px dotted $rose-gold;
+      border-right: none;
+      padding: 2rem 0;
+    }
+
+    p {
+      text-align: left;
+      padding: 0 1rem;
+    }
+
+    a {
+      color: navy;
+      font-weight: 800;
+    }
+
+    &:last-child {
+      border-right: none;
+      @media (max-width:800px)  {
+        border-bottom: none;
+      }
+    }
+  }
 }
