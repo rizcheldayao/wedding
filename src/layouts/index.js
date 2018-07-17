@@ -24,9 +24,9 @@ class App extends Component {
     return (
       <div className='layout'>
         <Helmet
-            title={'Wood Wedding'}
+            title={'Rizchel Dayao and Oliver Wood Wedding Website'}
             meta={[
-              { name: 'description', content: 'Wood wedding website' },
+              { name: 'description', content: 'Rizchel Dayao and Oliver Wood Wedding Website' },
               { name: 'keywords', content: 'wood, wedding, oliver wood, rizchel dayao' },
             ]}
         />

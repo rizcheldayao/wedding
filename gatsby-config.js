@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Wood Wedding',
+    title: 'Rizchel Dayao and Oliver Wood Wedding Website',
   },
   plugins: ['gatsby-plugin-react-helmet',
   'gatsby-plugin-sass',
