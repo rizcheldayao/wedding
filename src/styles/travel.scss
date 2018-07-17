@@ -53,9 +53,21 @@
       padding: 0 1rem;
     }
 
-    a {
-      color: navy;
+    button {
+      border: 2px solid $rose-gold;
+      color: $rose-gold;
       font-weight: 800;
+      padding: 0.5rem;
+      font-size: 16px;
+      border-radius: 12px;
+        font-family: $playfair-display;
+
+      &:hover {
+        background: $rose-gold;
+        color: $white;
+        cursor: pointer;
+
+      }
     }
 
     &:last-child {

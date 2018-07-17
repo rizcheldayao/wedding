@@ -6,7 +6,7 @@ class Footer extends Component {
     return (
       <div className='footer'>
         <img src={Engagement33} alt='Footer Image' />
-        <h1>Made with love by Rizchel</h1>
+        <h1>Made with 💕 by Rizchel</h1>
       </div>
     );
   }

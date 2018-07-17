@@ -16,11 +16,13 @@ class Travel extends Component {
           </article>
           <article className="travel-column">
             <img src={Car} />
-            <p>Once you arrive at the airport, you have multiple options to travel to wine country! Depending on the airport, you can take a shuttle or even a ferry to Napa. For more information or to book transporation services, go to this <a href='https://www.visitnapavalley.com/plan/transportation/' target="_blank">website</a>. Another option for transportation is to rent a car or order a ride sharing service like Uber or Lyft. </p>
+            <p>Once you arrive at the airport, you have multiple options to travel to wine country! Depending on the airport, you can take a shuttle or even a ferry to Napa. The website link below has more information about transporation services and options. Another option for transportation is to rent a car or order a ride sharing service like Uber or Lyft. </p>
+            <a href='https://www.visitnapavalley.com/plan/transportation/' target="_blank"><button>Visit transportation website</button></a>
           </article>
           <article className="travel-column">
             <img src={Hotel} />
-            <p>We have reserved a block of rooms at the DoubleTree by Hilton Hotel & Spa Napa Valley. The rate is $153.00 per night (not including tax). You can go <a href='http://group.doubletree.com/DayaoWoodWedding' target="_blank">here</a> to reserve your room at this rate. The hotel is about 19 miles away from the venue. You're more than welcome to stay at other hotels in Napa or Sonoma, as well!</p>
+            <p>We have reserved a block of rooms at the DoubleTree by Hilton Hotel & Spa Napa Valley. The rate is $153.00 per night (not including tax). The hotel is about 19 miles away from the venue. You can book your room through the website link below. You're more than welcome to stay at other hotels or Airbnbs in Napa or Sonoma, as well!</p>
+            <a href='http://group.doubletree.com/DayaoWoodWedding' target="_blank"><button>Visit hotel website</button></a>
           </article>
         </section>
         <h2>More coming soon!</h2>
