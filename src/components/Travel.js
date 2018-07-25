@@ -22,7 +22,7 @@ class Travel extends Component {
           <article className="travel-column">
             <img src={Hotel} />
             <p>We have reserved a block of rooms at the DoubleTree by Hilton Hotel & Spa Napa Valley. The rate is $153.00 per night (not including tax). The hotel is about 19 miles away from the venue. You can book your room through the website link below. If you'd like to stay somewhere closer to the venue, the bride and groom will be staying at <a href="https://www.marriott.com/hotels/travel/sfols-the-lodge-at-sonoma-renaissance-resort-and-spa/" target="_blank">The Lodge at Sonoma Renaissance Resort & Spa</a>. You are more than welcome to stay at other hotels or Airbnbs in Napa or Sonoma, as well!</p>
-            <a href='http://group.doubletree.com/DayaoWoodWedding' target="_blank"><button>Visit hotel website</button></a>
+            <a href='http://group.doubletree.com/DayaoWoodWedding' target="_blank"><button>Visit DoubleTree website</button></a>
           </article>
         </section>
         <h2>More coming soon!</h2>
