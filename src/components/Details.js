@@ -33,10 +33,10 @@ class Details extends Component {
                 </g>
               </svg>
             </div>
-            <h3>{Data.reception}</h3>
-            <h4>{Data.location}</h4>
-            <p>{Data.receptionTime}</p> <br />
-            <p>{Data.address}</p>
+            <h3>After Party</h3>
+            <h4>TBD</h4>
+            <p>April 19. 2019 at 10:30pm</p> <br />
+            <p>TBD</p>
           </section>
         </div>
       </div>
