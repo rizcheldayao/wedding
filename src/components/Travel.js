@@ -25,7 +25,21 @@ class Travel extends Component {
             <a href='http://group.doubletree.com/DayaoWoodWedding' target="_blank"><button>Visit DoubleTree website</button></a>
           </article>
         </section>
-        <h2>More coming soon!</h2>
+        <section className="travel-activities">
+          <h3>Things to do</h3>
+          <div className="travel-cards">
+            <div className="travel-card">
+              <p>- San Francisco -</p>
+              <p>Some popular attractions in San Francisco include the Golden Gate Bridge, Fisherman's Wharf, Alcatraz Island, Lombard Street, Pier 39, Golden Gate Park, Chinatown, and more! There's also some really good restaurants in SF. Click below to view more.</p>
+              <button><a href="https://www.thecrazytourist.com/top-25-things-to-do-in-san-francisco/" target="_blank">View San Francisco Activities</a></button>
+            </div>
+            <div className="travel-card">
+              <p>- Napa Valley/Sonoma -</p>
+              <p>There are many wineries and activities to do in the Napa and Sonoma area. Some of my favorite wineries are Castello di Amorosa, V Sattui, Beringer Vineyards, and Domaine Carneros. Click below to view more.</p>
+              <button><a href="https://www.visitnapavalley.com/things-to-do/" target="_blank">View Napa Valley/Sonoma Activities</a></button>
+            </div>
+          </div>
+        </section>
       </div>
     );
   }
