@@ -34,9 +34,9 @@ class Details extends Component {
               </svg>
             </div>
             <h3>After Party</h3>
-            <h4>TBD</h4>
-            <p>April 19. 2019 at 10:30pm</p> <br />
-            <p>TBD</p>
+            <h4>Murphy's Irish Pub & Restaurant</h4>
+            <p>April 19. 2019 at 10pm</p> <br />
+            <p>464 1st St E, Sonoma, CA 95476</p>
           </section>
         </div>
       </div>
